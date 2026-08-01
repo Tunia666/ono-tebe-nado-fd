@@ -1,3 +1,5 @@
+/* Общие стили для адресов и контактной информации */
+
 .address {
     display: flex;
     flex-direction: column;
@@ -8,24 +10,29 @@
     line-height: 1.35;
 }
 
-.overlay {
+/* Полупрозрачный слой затемняет фон и улучшает читаемость текста */
+
+.overlay::before {
+    content: "";
     position: absolute;
     inset: 0;
     z-index: 1;
     background-color: rgb(0 0 0 / 0.6);
 }
 
+/* Шапка сайта */
+
 .header {
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
     align-items: center;
-    padding: 92px 50px 96px;
+    padding: 92px 24px 96px;
 }
 
 .header__links-list {
     display: flex;
     gap: 32px;
-    padding-left: 18px;
+    margin-left: 26px;
     font-size: 18px;
     list-style: circle;
 }
@@ -65,7 +72,10 @@
 
 .header__address {
     justify-self: end;
+    margin-right: 26px;
 }
+
+/* Главный экран сайта */
 
 .cover {
     position: relative;
@@ -89,6 +99,8 @@
     letter-spacing: 30px;
     text-transform: uppercase;
 }
+
+/* Вспомогательные классы для выравнивания строк заголовка */
 
 .aligned-text {
     display: block;
@@ -115,10 +127,10 @@
     position: relative;
     z-index: 2;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    gap: 78px;
     margin-top: 106px;
+    margin-left: 28px;
 }
 
 .cover__description-text {
@@ -139,6 +151,8 @@
     background-color: transparent;
     cursor: pointer;
 }
+
+/* Секция с лотами */
 
 .lots {
     padding: 180px 24px 0;
@@ -220,6 +234,8 @@
     font-size: 20px;
 }
 
+/* Секция с информацией об аукционе */
+
 .about {
     display: grid;
     grid-template-columns: 334px 1fr;
@@ -257,6 +273,8 @@
     font-size: 20px;
     line-height: 1.2;
 }
+
+/* Подвал сайта */
 
 .footer {
     display: grid;

@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
+    <!-- Шапка сайта: навигация, логотип и контактная информация -->
     <header class="header">
+      <!-- Основное меню навигации по разделам страницы -->
       <nav class="header__menu" aria-label="Основная навигация">
         <ul class="header__links-list">
           <li class="header__links-list-item header__links-list-item_no-bullit">
@@ -24,7 +26,7 @@
           </li>
         </ul>
       </nav>
-
+      <!-- Логотип со ссылкой на главную страницу -->
       <a
         class="header__logo"
         href="./index.html"
@@ -36,28 +38,26 @@
           alt="Логотип аукциона «Оно тебе надо»"
         />
       </a>
-
+      <!-- Контактная информация аукциона -->
       <address class="address header__address">
         <a href="tel:+99995555555">+9 999 555 5555</a>
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         <p>наб. Принсенграхт 263-265, Амстердам</p>
       </address>
     </header>
-
+    <!-- Основное содержимое страницы -->
     <main>
-      <section class="cover" aria-labelledby="cover-title">
-        <div class="overlay"></div>
+      <!-- Главный экран сайта с заголовком и кнопкой ставки -->
+      <section class="cover overlay" aria-labelledby="cover-title">
         <h1 class="cover__title" id="cover-title">
           <span class="aligned-text">
-            о<span class="letter-spacing-extended"
-              >н<span class="no-letter-spacing">о</span></span
-            >
+            о<span class="letter-spacing-extended">но</span>
           </span>
+
           <span class="aligned-text aligned-text_center">
-            те<span class="letter-spacing-extended"
-              >б<span class="no-letter-spacing">е</span></span
-            >
+            те<span class="letter-spacing-extended">бе</span>
           </span>
+
           <span class="aligned-text aligned-text_right">
             <span class="letter-spacing-extended">н</span>ад<span
               class="no-letter-spacing"
@@ -78,8 +78,7 @@
         <ul class="lots__card-list">
           <li class="lots__card-list-item">
             <a class="card-link" href="#0">
-              <article class="card card_type_film">
-                <div class="overlay"></div>
+              <article class="card card_type_film overlay">
                 <h3 class="card__title">
                   Фильм режиссёра, который бросил киношколу
                 </h3>
@@ -93,8 +92,7 @@
           </li>
           <li class="lots__card-list-item">
             <a class="card-link" href="#0">
-              <article class="card card_type_book">
-                <div class="overlay"></div>
+              <article class="card card_type_book overlay">
                 <h3 class="card__title">
                   Книга, где описан один скучный день из жизни рекламного агента
                 </h3>
@@ -111,8 +109,7 @@
           </li>
           <li class="lots__card-list-item">
             <a class="card-link" href="#0">
-              <article class="card card_type_picture">
-                <div class="overlay"></div>
+              <article class="card card_type_picture overlay">
                 <h3 class="card__title">
                   Картина, которую повторит даже 5-летний сын маминой подруги
                 </h3>
@@ -162,7 +159,7 @@
         </div>
       </section>
     </main>
-
+    <!-- Подвал сайта: контакты, навигация и ссылки на социальные сети -->
     <footer class="footer">
       <address class="address footer__address">
         <a href="tel:+99995555555">+9 999 555 5555</a>
