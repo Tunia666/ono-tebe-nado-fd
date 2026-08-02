@@ -10,6 +10,17 @@
     line-height: 1.35;
 }
 
+.header__link,
+.footer__menu-link,
+.address a,
+.lots__look-more-link {
+    text-underline-offset: 4px;
+}
+
+.header__link_active,
+.footer__menu-link_active {
+    text-decoration: none;
+}
 /* Полупрозрачный слой затемняет фон и улучшает читаемость текста */
 
 .overlay::before {
@@ -43,18 +54,6 @@
 
 .header__links-list-item_no-bullit {
     list-style: none;
-}
-
-.header__link,
-.footer__menu-link,
-.address a,
-.lots__look-more-link {
-    text-underline-offset: 4px;
-}
-
-.header__link_active,
-.footer__menu-link_active {
-    text-decoration: none;
 }
 
 .header__logo {
@@ -115,10 +114,6 @@
     text-align: right;
 }
 
-.letter-spacing-extended {
-    letter-spacing: 60px;
-}
-
 .no-letter-spacing {
     letter-spacing: 0;
 }
@@ -130,14 +125,13 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 106px;
-    margin-left: 28px;
 }
 
 .cover__description-text {
     font-size: 22px;
-    line-height: 1.27;
+    line-height: 28px;
+    word-spacing: 18.7px;
     text-transform: uppercase;
-    word-spacing: 18px;
 }
 
 .bet-button {
@@ -208,13 +202,9 @@
     background-image: url("../images/card-lot-03.jpg");
 }
 
-.card__title,
-.card__text {
+.card__title {
     position: relative;
     z-index: 2;
-}
-
-.card__title {
     font-weight: 700;
     font-size: 22px;
     line-height: 1.2;
@@ -223,6 +213,8 @@
 }
 
 .card__text {
+    position: relative;
+    z-index: 2;
     font-size: 20px;
     line-height: 1.2;
 }
